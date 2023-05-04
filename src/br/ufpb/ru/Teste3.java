@@ -8,6 +8,7 @@ public class Teste3 {
 		System.out.println("Quantas refeições foram servidas hoje?");
 		int quantidadeRefeicoes = Integer.parseInt(leitor.nextLine());
 		RefeicaoRealizada[] refeicoes = new RefeicaoRealizada[quantidadeRefeicoes];
+		
 		for (int k = 0; k < quantidadeRefeicoes; k++) {
 			System.out.println("Matrícula do(a) aluno(a) [" + (k + 1) + "]");
 			String matricula = leitor.nextLine();
@@ -17,6 +18,7 @@ public class Teste3 {
 			System.out.printf("%s\n", refeicoes[k].toString());
 		}
 // TODO: Código a acrescentar
+		
 		int quantidadeAlmocos = calculaQuantAlmocos(refeicoes);
 		System.out.println("quantidade almoços:"+ quantidadeAlmocos );
 		
